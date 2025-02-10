@@ -1,4 +1,14 @@
-{
-"name": "release",
-"version": "1.0.0"
+module.exports = {
+    branches: "main",
+    plugins: [
+     '@semantic-release/conmmit-analyzer',
+     '@semantic-release/release-notes-generator',
+     '@semantic-release/git',
+     '@sementic-release/github',
+     ['@semantic-release/npm',
+         {
+         'npmPublish': false
+         }
+        ]
+    ]
 }
