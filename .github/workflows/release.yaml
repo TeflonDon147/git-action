@@ -18,4 +18,4 @@ jobs:
             - name: release
               run: npx semantic-release
               env:
-                GIT_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
